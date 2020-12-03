@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "poly-server-297417",
+  "private_key_id": "3fd9041cb9e492a580b2753a293952676ba18b82",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzW/64hhLd8OlS\n623GUdx2khXk3NJ50SSp25NCZpofej+VqvBTyUxSlUVneDue3kB/HcQYv6FglE9u\nH2oWOodzm1u4Y2hrHcuxSAX19GeKFg8xVHyI65KCcZtJcSaJfli3ypVL9VxVzBnw\nsWg4/nEyGD0EPCwliJgk62mGjpXiZFNPBh36gR7afgbu5J/2i2JL0XAJPbsUHS0T\nGiP4BRVEgBdqQ2Vicu7twBBIZF9e5YL/SSNvJF7iNVRypYiau+uqh8gnIcTDYLRi\nVn5GusFF+eN62r9e561ve7odVV3XV2hTlHCHkwEf6mHjQcFYrMgqAuqwGo4AueXX\n4TesGVMDAgMBAAECggEAL1sJQIAJyDac7CtD4xpnCplclX4mRkqNkxlp4pzDca8t\nzZ8B8CVUdPN7jSumFjaZMdbSmTQzcBQIestpj6/pZoEs8NyyS6Hkz4x0InHiyocz\ngLNNZDtKhg1n0jbBVYkZ9IDU9Wa1d+O5L58vpOitS2wx5AXdJBXSEeFkDcZk1Y51\nNRM9kO5Gm35bovuqVNqna48GYh+hXM3zPxzy485vDzHTe16JK0VmRb6cID7yPCME\nXb1ZEq6v8voKqQRVSOFBl/Zd94kkon3TrZKJw1TlzMOHd7x0V4KDtBDlZIOzOyy/\nGmhCQNjjZJF22gSbLrgeB/TFNmE9VPSqYlXoxZjeRQKBgQDlRmpiDsUy3GLvS3am\ncQCMvpC0wKCjfop1uUmonppnxJ8IwkcfPQWQTNbTUye11XSiGnZfy9CDgnoRkbho\n/sHO2P9R3bb8MOxIwuL0sc8vTZpHMCZ1FdUpPoq3IAIAgJzFlUURFyeRXL2Fl1pP\n6qIyfJD5oyGJ/TD6VBGhKTTVlwKBgQDIRBdXdlr09EZ37LQHwuGfimQRzuemc0CP\nfjTZV/ZITy8gUXN1ofQCFAXgCsE5Fqy831LrK0HjBxyFAKz/sah0Ii/Zq+0MWhwX\n8/SWKqH6vIgOR/BVUqOkS2Kv9KWtvClr8u/TiBMFGccxTLfpg3lz0ZszlmxtC70Q\n9dJlt+KTdQKBgQDMi3m1ab/8lCmfmw+Lhh0bc5fd6kxmECquxFM2n+jY0s2fHtQc\nxnAEQMkXV4SB8KFRTZJ1/HtWGD2XFw4SfdWiGG4QN2FctLjYYSXhcBCK/wy4nfhx\nVL0LQsS2g1PF5vf2PimUCbg/MyHR4SmtSoLRz9f3HtZ5KO1dJ0tjIEQGmQKBgBPE\njN1IRIArYI1T4w1lEipSWcBcQQdwFu5TEdpmUVwf3NH+2DvDSbeuzEmqJhqBf3mB\nPckS0wUa3ZjPUURIAA2+liSRUOvINT+0B++Os8BxPajTNwjlCFweSNZ/ep8klJ4g\nM8YYh3AYdE4MeZbmMGXbScuUzI0S/I2hBiyeMxJFAoGAWTFrcWBHjNO85vuMQNhp\nhz9HeOAj8vXpT8L8vcFN1EwE5kL/PUAEMkB9jH5x8tTpwo49IBRvC71KvHBntRI/\nF1H2L0T44rSgTqBvllCpIcw6ZW7pImgR4FYBdSazY9rwMyDgzWHlZkSLYwDK5ogG\n/BdhpYgrBJKAPUpDsmuOFAk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "rita-c@poly-server-297417.iam.gserviceaccount.com",
+  "client_id": "111853888130882824132",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rita-c%40poly-server-297417.iam.gserviceaccount.com"
+}
