@@ -83,15 +83,11 @@ app.use(
 const index = require("./routes/index");
 app.use("/", index);
 
-const authRoutes = require("./routes/auth-routes");
+const authRoutes = require("./routes/auth");
 app.use("/api", authRoutes);
 
-const index = require('./routes/index');
-app.use('/', index);
 app.locals.title = "POLY";
 app.locals.GoogleVisionKey = process.env.GOOGLE_VISION_API_KEY;
 
-const index = require("./routes/index");
-app.use("/", index);
 
 module.exports = app;
