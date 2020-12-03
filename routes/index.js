@@ -8,7 +8,9 @@ router.get("/", (req, res, next) => {
 });
 
 router.get("/getColor", (req, res) => {
-  getColor("public/images/2020-08-08 (2).png");
+  getColor("public/images/2020-08-08 (2).png").then((response) => {
+    res.json(response);
+  });
 });
 
 module.exports = router;
