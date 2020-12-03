@@ -3,7 +3,7 @@ const LocalStrategy = require("passport-local");
 const bcrypt = require("bcryptjs");
 const User = require("../models/User-model");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
-//this are passport matheds
+//this are passport mathods
 //we know what they do but not how they work
 
 //Set the user in the session - login
