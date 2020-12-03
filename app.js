@@ -85,7 +85,7 @@ app.use(
 const index = require("./routes/index");
 app.use("/", index);
 
-const authRoutes = require("./routes/auth");
+const authRoutes = require("./routes/auth-route");
 app.use("/api", authRoutes);
 
 app.locals.title = "POLY";
