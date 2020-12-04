@@ -11,6 +11,7 @@ router.post("/signup", (req, res) => {
     res.status(400).json({ message: "Provide username and password" });
     return;
   }
+
   User.findOne({ username }, (err, foundUser) => {
     if (err) {
       res.status(500).json({ message: "Username check went bad." });
