@@ -116,3 +116,33 @@ const color = [
       "https://res.cloudinary.com/dkadtxtto/image/upload/v1607075462/poly-server/yellow_oclecd.png",
   },
 ];
+
+/*cards.forEach((card) => {
+  let phraseAudioEng="";
+  let translationAudioPt="";
+  let meaningAudioEng="";
+  googleTTS(`${card.phrase}`, 'en', 1)
+  .then((phraseAudioEngFromTTS) => {
+    phraseAudioEng = phraseAudioEngFromTTS;
+    return googleTTS(`${card.translation}`, 'pt', 1)
+    .then((translationAudioPtFromTTS) => {
+      translationAudioPt=translationAudioPtFromTTS;
+      return googleTTS(`${card.meaning}`, 'en', 1)
+      .then(meaningAudioEngFromTTS => {
+        meaningAudioEng = meaningAudioEngFromTTS;
+      return Card.create({
+        phrase: card.phrase,
+        translation: card.translation,
+        meaning: card.meaning,
+        phraseAudioEng,
+        translationAudioPt,
+        meaningAudioEng
+      }).then((cardFromDb) => {
+        console.log(`Created ${cardFromDb.phrase} proverbs`);
+      }).catch((err) => {
+        console.log(`Error occured: ${err}`);
+      });
+    });
+  });
+});
+}); */

@@ -88,6 +88,9 @@ app.use("/", index);
 const authRoutes = require("./routes/auth-route");
 app.use("/api", authRoutes);
 
+const scanRoutes = require("./routes/scan-route");
+app.use("/api", scanRoutes);
+
 app.locals.GoogleVisionKey = process.env.GOOGLE_VISION_API_KEY;
 
 module.exports = app;
