@@ -1,15 +1,15 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+//const Color = mongoose.model("Color", colorSchema);
 
-const colorSchema = new Schema({
-  name: String,
-  imageURL: String
-},
-{
-  timestamps: true
-}
+const colorSchema = new Schema(
+  {
+    name: String,
+    imageURL: String,
+  },
+  {
+    timestamps: true,
+  }
 );
 
-const User = mongoose.model('Color', colorSchema);
-
-module.exports = Color;
+module.exports = model("Color", colorSchema);

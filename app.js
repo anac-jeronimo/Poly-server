@@ -72,7 +72,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 
 // default value for title local
-app.locals.title = "Express - Generated with IronGenerator";
+app.locals.title = "Poly";
 
 //Allowing our front end to get resources from our backend
 app.use(
@@ -88,7 +88,6 @@ app.use("/", index);
 const authRoutes = require("./routes/auth-route");
 app.use("/api", authRoutes);
 
-app.locals.title = "POLY";
 app.locals.GoogleVisionKey = process.env.GOOGLE_VISION_API_KEY;
 
 module.exports = app;
