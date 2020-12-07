@@ -1,8 +1,6 @@
 const vision = require("@google-cloud/vision");
 const namer = require("color-namer");
-const googleTTS = require("google-tts-api");
-
-
+//const googleTTS = require("google-tts-api");
 
 const getColor = async (img) => {
   const client = new vision.ImageAnnotatorClient();
@@ -19,7 +17,7 @@ const getColor = async (img) => {
 
 module.exports = getColor;
 
-
+/*
 googleTTS('Hello World', 'en', 1) // speed normal = 1 (default), slow = 0.24
   .then((url) => {
     console.log(url); // https://translate.google.com/translate_tts?...
@@ -27,3 +25,4 @@ googleTTS('Hello World', 'en', 1) // speed normal = 1 (default), slow = 0.24
   .catch((err) => {
     console.error(err.stack);
   })
+*/
