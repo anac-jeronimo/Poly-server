@@ -5,6 +5,7 @@ const fileUpload = require("../configs/cloudinary");
 const vision = require("@google-cloud/vision");
 const getColor = require("../utils/api");
 const images = require("../bin/images");
+/* const sound = require("../utils/textToSpeech"); */
 
 //upload to cloudinary
 router.post("/upload", fileUpload.single("file"), (req, res) => {
@@ -21,5 +22,11 @@ router.get("/getcolor/:image", (req, res) => {
     res.json({ imageUrl: images[response], colorName });
   });
 });
+
+/* //text to speech
+router.get("/textToSpeech", (req, res) => {
+  const sound = req.params.sound;
+
+}) */
 
 module.exports = router;
