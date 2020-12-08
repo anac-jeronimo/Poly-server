@@ -13,6 +13,7 @@ router.post("/upload", fileUpload.single("file"), (req, res) => {
 });
 
 router.get("/getcolor/:image", (req, res) => {
+  const image = req.params.image;
   getColor(
     `https://res.cloudinary.com/dkadtxtto/image/upload/v1607365566/poly-client/${image}`
   ).then((response) => {
