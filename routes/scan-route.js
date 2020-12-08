@@ -5,6 +5,7 @@ const fileUpload = require("../configs/cloudinary");
 const vision = require("@google-cloud/vision");
 const getColor = require("../utils/api");
 const images = require("../bin/images");
+const User = require("../models/User");
 /* const sound = require("../utils/textToSpeech"); */
 
 //upload to cloudinary
@@ -21,6 +22,16 @@ router.get("/getcolor/:image", (req, res) => {
     let colorName = response;
     res.json({ imageUrl: images[response], colorName });
   });
+});
+
+router.put("/addimage", (req, res) => {
+  const { imageurl, userid } = req.body;
+  console.log(imageurl, userid);
+  User.findByIdAndUpdate(userid, { $push: { uploads: imageurl } }).then(
+    (response) => {
+      res.json(response);
+    }
+  );
 });
 
 /* //text to speech
