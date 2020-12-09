@@ -32,11 +32,13 @@ router.post("/uploadcamera", (req, res) => {
   console.log("this is the obj image", obj); */
   // fileUpload.single(imgFromCamera);
 
-  cloudinary.uploader.upload(req.body.url, function (error, result) {
-    console.log(result);
-  });
-
-  res.json({ message: "hi" });
+  cloudinary.uploader.upload(
+    req.body.url,
+    { folder: "poly-client" },
+    function (error, result) {
+      res.json({ result });
+    }
+  );
 });
 
 router.put("/addimage", (req, res) => {
