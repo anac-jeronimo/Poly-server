@@ -9,9 +9,13 @@ const User = require("../models/User");
 /* const sound = require("../utils/textToSpeech"); */
 
 //upload to cloudinary
-router.post("/upload", fileUpload.single("file"), (req, res) => {
+router.post("/upload", fileUpload.single("file")["url"], (req, res) => {
   console.log("in upload");
-  res.json({ fileUrl: req.file.path });
+  if (req.file.path) {
+    res.json({ fileUrl: req.file.path });
+  } else {
+    console.log("is working form uploads!");
+  }
 });
 
 router.get("/getcolor/:image", (req, res) => {
