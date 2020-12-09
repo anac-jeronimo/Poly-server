@@ -7,15 +7,13 @@ const getColor = require("../utils/api");
 const images = require("../bin/images");
 const User = require("../models/User");
 /* const sound = require("../utils/textToSpeech"); */
+const cloudinary = require("cloudinary").v2;
 
 //upload to cloudinary
-router.post("/upload", fileUpload.single("file")["url"], (req, res) => {
+router.post("/upload", fileUpload.single("file"), (req, res) => {
   console.log("in upload");
-  if (req.file.path) {
-    res.json({ fileUrl: req.file.path });
-  } else {
-    console.log("is working form uploads!");
-  }
+
+  res.json({ fileUrl: req.file.path });
 });
 
 router.get("/getcolor/:image", (req, res) => {
@@ -26,6 +24,19 @@ router.get("/getcolor/:image", (req, res) => {
     let colorName = response;
     res.json({ imageUrl: images[response], colorName });
   });
+});
+
+router.post("/uploadcamera", (req, res) => {
+  /*   const obj = JSON.parse(JSON.stringify(req.body.url));
+  const imgFromCamera = Object.keys(obj)[0];
+  console.log("this is the obj image", obj); */
+  // fileUpload.single(imgFromCamera);
+
+  cloudinary.uploader.upload(req.body.url, function (error, result) {
+    console.log(result);
+  });
+
+  res.json({ message: "hi" });
 });
 
 router.put("/addimage", (req, res) => {

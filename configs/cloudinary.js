@@ -13,7 +13,7 @@ const storage = new CloudinaryStorage({
   cloudinary,
   params: {
     folder: "poly-client",
-    allowedFormats: ["jpg", "png", "img"],
+    allowedFormats: ["jpg", "png", "img", ""],
   },
   // params: { resource_type: 'raw' }, => this is in case you want to upload other type of files, not just images
   filename: function (req, file, cb) {
