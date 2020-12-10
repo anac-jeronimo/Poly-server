@@ -31,6 +31,7 @@ router.post("/uploadcamera", (req, res) => {
   const imgFromCamera = Object.keys(obj)[0];
   console.log("this is the obj image", obj); */
   // fileUpload.single(imgFromCamera);
+  console.log("this router was called");
 
   cloudinary.uploader.upload(
     req.body.url,
