@@ -70,7 +70,7 @@ app.locals.title = "Poly";
 app.use(
   cors({
     credentials: true,
-    origin: [process.env.CLIENT_HOSTNAME],
+    origin: [process.env.CLIENT_HOSTNAME, 'http://localhost:3000'],
   })
 );
 
