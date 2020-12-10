@@ -1,0 +1,105 @@
+body {
+  /* background-color: #262729; */
+  background-color: whitesmoke;
+}
+
+.login-box {
+  width: 70vh;
+  height: 70vh;
+  background: whitesmoke;
+  color: whitesmoke;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  margin-top: 25px;
+   border-radius: 20px 0 20px 0; 
+  color: #111416;
+}
+
+.avatar {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 50px);
+}
+  Form > Input {
+  margin-bottom: 3vh;
+} 
+ div > input {
+  margin-bottom: 3vh;
+}  
+
+.login-box p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+Input {
+  width: 80%;
+ margin-bottom: 30px; 
+  height: 40px;
+  margin-top: 30px; 
+  border-radius: 10px;
+}
+.checkbox {
+  margin-top: 2vh;
+}
+
+/*   .input [type="text"], input [type="email"],input [type="password"] {
+    border: none;
+     border-bottom: 1px solid black #fff;
+    background: transparent;
+    outline: none;
+    color:black;
+    font-size: 16px;
+  }  */
+
+.login-btn {
+  border: none;
+  outline: none;
+  height: 40px;
+  background:  #111416 ;
+  color: whitesmoke;
+  font-size: 21px;
+  border-radius: 10px;
+  width: 80%;
+  /* margin-bottom: 2px; */
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  background: #606063;
+  color:#111416;
+}
+
+.loginP {
+  margin-top: 4vh !important;
+  /* color:whitesmoke !important; */
+}
+/* .signA {
+  color: whitesmoke;
+}
+ */
+/* .signA:hover {
+  color: whitesmoke;
+}
+ */
+  .login-box p {
+    font-size: 16px;
+  } 
+
+  .ant-form-item-control-input-content {
+  margin-top: 10px;
+  }
+  .loginParag{
+   /*  color: whitesmoke !important; */
+    margin-top: 4vh !important;
+  }

@@ -6,4 +6,15 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
+//this route means that every route that doesnt start with /api will be sent to our 
+//dist folder, that is our react app
+router.all("*", (req,res,next) =>{
+  if (req.originalUrl.startsWith('/api')) {
+      // skip any /api routes
+      next();
+  } else {
+    res.sendFile(path.join(__dirname, '../dist/index.html'));
+  }
+})
+
 module.exports = router;
